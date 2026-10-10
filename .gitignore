@@ -1,0 +1,13 @@
+.out/
+policy-test-evidence.json
+asset-test-evidence.json
+node_modules/
+*.exe
+*.dll
+*.pfx
+*.p12
+*.key
+*.pem
+*.wav
+.env*
+PUBLICATION-APPROVAL.json

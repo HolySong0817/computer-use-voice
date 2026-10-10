@@ -1,0 +1,25 @@
+{
+  "Status": "OWNER_APPROVED_MIT_SOURCE_ONLY",
+  "Files": [
+    ".gitignore", ".codex-plugin/plugin.json", "LICENSE",
+    "README.md", "LICENSE-STATUS.md", "LICENSE-INVENTORY.md", "ASSETS.md", "SIGNING-POLICY.md", "PRIVACY.md", "CONTRIBUTING.md", "PUBLIC-FILES.json",
+    "hooks/hooks.json", "hooks/src/ComputerUseVoicePreTool.cs",
+    "native/src/ComputerUseVoiceNotifier.cs", "native/src/WarningAssetPin.cs", "src/AssemblyInfo.cs",
+    "skills/computer-use-voice/SKILL.md", "skills/computer-use-voice/helper/create_voice_wrapped_sky.mjs",
+    "skills/computer-use-voice/helper/initialize_voice_wrapped_sky.mjs", "skills/computer-use-voice/helper/notifier_client.mjs",
+    "tests/fake_sky.mjs", "tests/warning_gate_offline_tests.mjs", "tests/global_wrapper_offline_tests.mjs",
+    "ReleasePolicy.psm1", "Test-ReleasePolicy.ps1", "AssetPolicy.psm1", "Test-AssetPolicy.ps1",
+    "Build.ps1", "Seal-Release.ps1", "Verify.ps1", "assets/asset-rights.example.json"
+  ],
+  "Excluded": [
+    "All files not explicitly listed above",
+    ".out and compiled helpers or DLLs",
+    "All WAV/audio assets and the original TTS generator",
+    "Original audio sidecar tests, fault-helper EXE tests, report/timeline generators",
+    "Private reports, memories, diagnostics, machine identifiers and absolute user paths",
+    "Git history, accounts, environment files, keys, certificates, tokens and signing credentials",
+    "Installed host/runtime/SDK/cache files and third-party runtimes",
+    "Remote CI, service registrations and payment details",
+    "Private publication declarations and internal review evidence"
+  ]
+}

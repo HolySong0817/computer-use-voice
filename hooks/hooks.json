@@ -1,0 +1,33 @@
+{
+  "description": "Fail-closed Computer Use voice warning gate for the official Node REPL path.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$PLUGIN_ROOT/hooks/computer-use-voice-pretool.exe\"",
+            "commandWindows": "powershell.exe -NoLogo -NoProfile -NonInteractive -WindowStyle Hidden -Command \"& ([IO.Path]::Combine([Environment]::GetEnvironmentVariable('PLUGIN_ROOT'),'hooks','computer-use-voice-pretool.exe'))\"",
+            "timeout": 10,
+            "statusMessage": "Resetting the Computer Use warning gate"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "^mcp__node_repl__js$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$PLUGIN_ROOT/hooks/computer-use-voice-pretool.exe\"",
+            "commandWindows": "powershell.exe -NoLogo -NoProfile -NonInteractive -WindowStyle Hidden -Command \"& ([IO.Path]::Combine([Environment]::GetEnvironmentVariable('PLUGIN_ROOT'),'hooks','computer-use-voice-pretool.exe'))\"",
+            "timeout": 10,
+            "statusMessage": "Applying the Computer Use warning gate"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "computer-use-voice-wrapper",
+  "version": "0.2.0+review.20261010",
+  "description": "MIT-licensed source-only third-party warning gate. Unsigned, no warning WAV, not an installable release or an official OpenAI product.",
+  "author": {"name": "HolySong0817"},
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Computer Use Voice (third-party review candidate)",
+    "shortDescription": "A fixed notice before supported desktop controls",
+    "longDescription": "Requires an approved user-supplied warning asset and separately verified signed helpers. No claim of current Codex compatibility or Smart App Control acceptance.",
+    "developerName": "HolySong0817",
+    "category": "Productivity",
+    "capabilities": ["Interactive"],
+    "defaultPrompt": ["Use the approved warning-gated integration only after release validation."]
+  }
+}
